@@ -1,11 +1,16 @@
 
-# Improving the accuracy of a model using a gradient based method.
+# Improving the accuracy of a model using XGBoost.
+
+## What is XGBoost ?
+
+XGBoost is a supervised machine learning algorithm that uses gradient boosting (GBM) framework. It belongs to a family of boosting algorithms. The term 'XGBoost' stands for "Extreme Gradient Boosting". The 
+
 
 There are different ways to improve the accuracy of a model. But in this discussion we are going to focus on gradient based methods. Gradient techniques are ensemble methods. But we are particularly interested XGBoost. The algorithm is known for winning competitions for structured data.
 
 What is a XGBoost ?
 
-XGBoost is supervised machine learning algorithm that belongs to the family of boosting algorithms and uses the gradient boosting(GBM) framework. It is an optimized distributed gradient boosting library. The term XGBoost stands for “Extreme Gradient Boosting”. The algorithm works well on distributed systems.  
+It is an optimized distributed gradient boosting library.. The algorithm works well on distributed systems.  
 
 
 The XGBoost algorithm is gaining popularity for being better than most machine learning algorithms. It is a “state-of-the-art” machine learning algorithm to deal with structured data. The key to XGBoost high accuracy is the use of boosting. What boosting does is it combines weak learners and strong learners to improve the prediction accuracy. 
