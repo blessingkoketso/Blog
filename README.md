@@ -1,5 +1,5 @@
 
-#Improving the accuracy of a model using a gradient based method.
+# Improving the accuracy of a model using a gradient based method.
 
 There are different ways to improve the accuracy of a model. But in this discussion we are going to focus on gradient based methods. Gradient techniques are ensemble methods. But we are particularly interested XGBoost. The algorithm is known for winning competitions for structured data.
 
