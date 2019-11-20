@@ -13,10 +13,10 @@ The XGBoost algorithm is gaining popularity for being better than most machine l
 
 In this section, we will compare the performance of a Logistic Regression, Random Forest and XGBoost model.  We will look at an example to test the performance of three models using a mortgage approval dataset. The problem we are trying to solve is the prediction of approvals.
 
-Background on the dataset 
+Background on the dataset is adapted from the Federal Financial Institutions Examination Council's (FFIEC). 
 
 ### Logistic Regression :
-
+We predict whether an applicant will be granted a loan using logistic regression 
 
 
 The advantage of XGBoost over traditional methods is seen in the execution speed and model performance. It produces superior results due to its software architecture and compatibility to hardware. 
