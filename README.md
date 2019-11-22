@@ -18,14 +18,44 @@ Background on the dataset is adapted from the Federal Financial Institutions Exa
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
-### Random Forest :  
+### Random Forest : 
+We predict whether an applicant will be granted a loan but now we are using random forests,
 
 ### XGBoost
-The advantage of XGBoost over traditional methods is seen in the execution speed and model performance. It produces superior results due to its software architecture and compatibility to hardware. 
+We predict whether an applicant will be granted a loan but now we are using XGBoost, to get best out of XGBoost we optimise the parameters in the following, 
+
+For max_depth the best value is between 3 and 8 this is the number of trees. The learning_rate should be less than or equal to 0.1 anything learning rate that is small will compromise the prediction.  For n_estimators the best number of estimators to use is between 50 and 150. 
+
+- Splitting the data into training and testing
+X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
+
+- XGBoost
+xg_cl = xgb.XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bynode=1, colsample_bytree=1, gamma=0, learning_rate=0.1,
+       max_delta_step=0, max_depth=8, min_child_weight=1, missing=None,
+       n_estimators=150, n_jobs=1, nthread=None,
+       objective='binary:logistic', random_state=0, reg_alpha=0,
+       reg_lambda=1, scale_pos_weight=1, seed=None, silent=None,
+       subsample=1, verbosity=1)
+
+- Training the model
+xg_cl.fit(X_train,y_train)
+
+- Predicting
+y_pred = xg_cl.predict(X_test)
+
+- Accuracy
+print(accuracy_score(y_test,y_pred))
+
+If we compare the results we can see that the clear winner when it comes to accuracy is XGBoost. The advantage of XGBoost is in the execution speed and model performance. It produces superior results due to the architecture and compability to hardware.
+
+
+
+
 
 To optimise the XGBoost set the following parameters,  
 
-For max_depth the best value is between 3 and 8 this is the number of trees. The learning_rate should be less than or equal to 0.1 anything learning rate that is small will compromise the prediction.  For n_estimators the best number of estimators to use is between 50 and 150. 
+
 
 Why use XGBoost
 
