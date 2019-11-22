@@ -35,6 +35,7 @@ Background on the dataset is adapted from the Federal Financial Institutions Exa
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
+Below is a code snippet of XGBoost,
 
 - X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
 
@@ -49,7 +50,10 @@ We predict whether an applicant will be granted a loan using logistic regression
 If you run the code snippet above you will get an accuracy of 
 
 ### Random Forest : 
-We predict whether an applicant will be granted a loan but now we are using random forests,
+We predict whether an applicant will be granted a loan but now we are using random forests.
+
+
+Below is a code snippet of XGBoost,
 
 - X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
 
@@ -63,10 +67,14 @@ We predict whether an applicant will be granted a loan but now we are using rand
 
 If you run the code snippet above you will get an accuracy of 
 
-### XGBoost
-We predict whether an applicant will be granted a loan but now we are using XGBoost, to get best out of XGBoost we optimise the parameters in the following, 
+### XGBoost :
+We predict whether an applicant will be granted a loan but now we are using XGBoost. To get the best out of XGBoost we optimise the parameters in the following, 
 
-For max_depth the best value is between 3 and 8 this is the number of trees. The learning_rate should be less than or equal to 0.1 anything learning rate that is small will compromise the prediction.  For n_estimators the best number of estimators to use is between 50 and 150. 
+- For max_depth the best value is between 3 and 8 this is the number of trees. 
+- The learning_rate should be less than or equal to 0.1 anything learning rate that is small will compromise the prediction. 
+- For n_estimators the best number of estimators to use is between 50 and 150. 
+
+Below is a code snippet of XGBoost,
 
 - X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
 
