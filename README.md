@@ -18,9 +18,9 @@ Background on the dataset is adapted from the Federal Financial Institutions Exa
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
-## Random Forest :  
+### Random Forest :  
 
-## XGBoost
+### XGBoost
 The advantage of XGBoost over traditional methods is seen in the execution speed and model performance. It produces superior results due to its software architecture and compatibility to hardware. 
 
 To optimise the XGBoost set the following parameters,  
