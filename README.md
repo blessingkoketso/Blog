@@ -13,8 +13,25 @@ The XGBoost algorithm is gaining popularity for being better than most machine l
 
 In this section, we will compare the performance of a Logistic Regression, Random Forest and XGBoost model.  We will look at an example to test the performance of three models using a mortgage approval dataset. The problem we are trying to solve is the prediction of approvals.
 
-Background on the dataset is adapted from the Federal Financial Institutions Examination Council's (FFIEC). 
+Background on the dataset is adapted from the Federal Financial Institutions Examination Council's (FFIEC). Through feature engineering we selected the following features, 
 
+- property_type
+- loan_purpose
+- lender
+- loan_amount
+- preapproval
+- state_code
+- county_code
+- applicant_ethnicity
+- applicant_race
+- applicant_sex
+- applicant_income
+- population
+- minority_population_pct
+- ffiecmedian_family_income
+- tract_to_msa_md_income_pct
+- co_applicant
+ 
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
@@ -29,6 +46,8 @@ We predict whether an applicant will be granted a loan using logistic regression
 
 - score = accuracy_score(y_test,y_pred)
 
+If you run the code snippet above you will get an accuracy of 
+
 ### Random Forest : 
 We predict whether an applicant will be granted a loan but now we are using random forests,
 
@@ -41,6 +60,8 @@ We predict whether an applicant will be granted a loan but now we are using rand
 - y_pred = rf_clf.predict(X_test)
 
 - score = accuracy_score(y_test,y_pred)
+
+If you run the code snippet above you will get an accuracy of 
 
 ### XGBoost
 We predict whether an applicant will be granted a loan but now we are using XGBoost, to get best out of XGBoost we optimise the parameters in the following, 
@@ -65,42 +86,21 @@ For max_depth the best value is between 3 and 8 this is the number of trees. The
 
 - print(accuracy_score(y_test,y_pred))
 
+If you run the code snippet above you will get an accuracy of 
+
 If we compare the results we can see that the clear winner when it comes to accuracy is XGBoost. The advantage of XGBoost is in the execution speed and model performance. It produces superior results due to the architecture and compability to hardware.
 
 
-
-
-
-To optimise the XGBoost set the following parameters,  
-
-
-
-Why use XGBoost
+## Why use XGBoost
 
 The two reasons to use XGBoost are 
 Execution speed.
 Model Performance.
 
-
 It is said that, when you are in doubt use XGBoost.
 
 
 
-
-Introduction to Gradient Boosting
-Gradient boosting is one of the most powerful techniques for building predictive models. 
-A loss function to be optimized – cross entropy for classification
-A weak learner to make prediction – greedily constructed decision tree.
-An additive model – used to make weak learners to minimize the loss function
-XGBoost is a powerful predictive modeling algorithm, perhaps more powerful than random forest.
-
-XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.   The care engineering of the implementation, including:
-Parallelisation – tree construction using all of your CPU cores during training.
-Distributed Computing – for training very large models using a cluster of machines.
-Out-of-Core Computing – for very datasets that don’t fit into memory
-Cache Optimisation – data structures and algorithm to make the best use if hardware.
-
-Monitor Performance and Early Stopping
 
 
 
