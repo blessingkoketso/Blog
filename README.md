@@ -97,13 +97,16 @@ If you run the code snippet above you will get an accuracy of 0.71299.
 If we compare the results we can see that the clear winner when it comes to accuracy is XGBoost. The advantage of XGBoost is in the execution speed and model performance. It produces superior results due to the architecture and compability to hardware.
 
 
-## Why use XGBoost
+### Why use XGBoost
 
 The two reasons to use XGBoost are 
 - Execution speed.
 - Model Performance.
 
 It is said that, when you are in doubt use XGBoost.
+
+## Conclusion
+
 
 
 
