@@ -16,9 +16,11 @@ In this section, we will compare the performance of a Logistic Regression, Rando
 Background on the dataset is adapted from the Federal Financial Institutions Examination Council's (FFIEC). 
 
 ### Logistic Regression :
-We predict whether an applicant will be granted a loan using logistic regression 
+We predict whether an applicant will be granted a loan using logistic regression, 
 
+## Random Forest :  
 
+## XGBoost
 The advantage of XGBoost over traditional methods is seen in the execution speed and model performance. It produces superior results due to its software architecture and compatibility to hardware. 
 
 To optimise the XGBoost set the following parameters,  
