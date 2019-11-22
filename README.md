@@ -18,8 +18,29 @@ Background on the dataset is adapted from the Federal Financial Institutions Exa
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
+
+- X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
+
+- lr_clf = LogisticRegression()
+
+- lr_clf.fit(X_train,y_train)
+
+- y_pred = lr_clf.predict(X_test)
+
+- score = accuracy_score(y_test,y_pred)
+
 ### Random Forest : 
 We predict whether an applicant will be granted a loan but now we are using random forests,
+
+- X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
+
+- rf_clf = RandomForestClassifier(class_weight = "balanced")
+
+- rf_clf.fit(X_train,y_train)
+
+- y_pred = rf_clf.predict(X_test)
+
+- score = accuracy_score(y_test,y_pred)
 
 ### XGBoost
 We predict whether an applicant will be granted a loan but now we are using XGBoost, to get best out of XGBoost we optimise the parameters in the following, 
