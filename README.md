@@ -35,7 +35,7 @@ Background on the dataset is adapted from the Federal Financial Institutions Exa
 ### Logistic Regression :
 We predict whether an applicant will be granted a loan using logistic regression, 
 
-Below is a code snippet of XGBoost,
+Below is a code snippet of Logistic regression,
 
 - X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
 
@@ -53,7 +53,7 @@ If you run the code snippet above you will get an accuracy of
 We predict whether an applicant will be granted a loan but now we are using random forests.
 
 
-Below is a code snippet of XGBoost,
+Below is a code snippet of Random forest,
 
 - X_train,X_test,y_train,y_test = train_test_split(Features,Labels,random_state =1115,test_size = 0.2,train_size = 0.8)
 
@@ -102,8 +102,8 @@ If we compare the results we can see that the clear winner when it comes to accu
 ## Why use XGBoost
 
 The two reasons to use XGBoost are 
-Execution speed.
-Model Performance.
+- Execution speed.
+- Model Performance.
 
 It is said that, when you are in doubt use XGBoost.
 
