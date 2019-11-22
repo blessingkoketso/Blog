@@ -47,7 +47,7 @@ Below is a code snippet of Logistic regression,
 
 - score = accuracy_score(y_test,y_pred)
 
-If you run the code snippet above you will get an accuracy of 
+If you run the code snippet above you will get an accuracy of 0.62007. 
 
 ### Random Forest : 
 We predict whether an applicant will be granted a loan but now we are using random forests.
@@ -65,7 +65,7 @@ Below is a code snippet of Random forest,
 
 - score = accuracy_score(y_test,y_pred)
 
-If you run the code snippet above you will get an accuracy of 
+If you run the code snippet above you will get an accuracy of 0.65767.
 
 ### XGBoost :
 We predict whether an applicant will be granted a loan but now we are using XGBoost. To get the best out of XGBoost we optimise the parameters in the following, 
@@ -88,13 +88,11 @@ Below is a code snippet of XGBoost,
 
 - xg_cl.fit(X_train,y_train)
 
-
 - y_pred = xg_cl.predict(X_test)
-
 
 - print(accuracy_score(y_test,y_pred))
 
-If you run the code snippet above you will get an accuracy of 
+If you run the code snippet above you will get an accuracy of 0.71299.
 
 If we compare the results we can see that the clear winner when it comes to accuracy is XGBoost. The advantage of XGBoost is in the execution speed and model performance. It produces superior results due to the architecture and compability to hardware.
 
