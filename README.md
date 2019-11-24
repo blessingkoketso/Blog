@@ -105,7 +105,6 @@ The two reasons to use XGBoost are
 
 It is said that, when you are in doubt use XGBoost.
 
-## Conclusion
 
 
 
